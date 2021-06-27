@@ -1,0 +1,20 @@
+puts "Insert Username:"
+new_username = gets.chomp
+
+puts "Insert Password:"
+new_password = gets.chomp
+
+puts "Insert Age:"
+new_age = gets.chomp.to_i
+
+puts "Get Username:"
+get_username = gets.chomp
+
+puts "Get Password"
+get_password = gets.chomp
+
+if new_age >= 18 && get_username == new_username && get_password == new_password
+  puts "Successful Login :)"
+else
+  puts "Unsuccessful Login :("
+end
